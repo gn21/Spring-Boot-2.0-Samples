@@ -4,4 +4,11 @@ spring:
     password: Jack123!
     url: jdbc:mysql://rm-wz939g2zz921yd9rjo.mysql.rds.aliyuncs.com:3306/jdbc_template?useUnicode=true&amp;characterEncoding=utf8&amp;zeroDateTimeBehavior=convertToNull&amp;allowMultiQueries=true&useSSL=false
     username: root
+#    schema: classpath:schema.sql
+#  jpa:
+#    show-sql: true
+#    properties:
+#      hibernate:
+#        hbm2ddl:
+#          auto: update
 
