@@ -7,21 +7,21 @@ import org.springframework.data.domain.Pageable;
 
 public interface UserService {
 
-    public User findUser(int id);
+    User findUser(int id);
 
-    public Integer addUser(User user);
+    Integer addUser(User user);
 
-    public List<User> getAllUser(int start, int end);
+    List<User> getAllUser(int start, int end);
 
-    public User getUser(String name);
+    User getUser(String name);
 
-    public User getUser(String name, Integer departmentId);
+    User getUser(String name, Integer departmentId);
 
-    public Page<User> queryUser(Integer departmentId, Pageable page);
+    Page<User> queryUser(Integer departmentId, Pageable page);
 
-    public Page<User> queryUser2(Integer departmentId, Pageable page);
+    Page<User> queryUser2(Integer departmentId, Pageable page);
 
-    public List<User> getByExample(String name);
+    List<User> getByExample(String name);
 
-    public void updateUser();
+    void updateUser();
 }

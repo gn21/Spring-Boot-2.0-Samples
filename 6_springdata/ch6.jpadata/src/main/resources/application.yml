@@ -1,0 +1,8 @@
+spring:
+    datasource:
+        driver-class-name: com.mysql.jdbc.Driver
+        password: Jack123!
+        url: jdbc:mysql://rm-wz939g2zz921yd9rjo.mysql.rds.aliyuncs.com:3306/jdbc_template?useUnicode=true&amp;characterEncoding=utf8&amp;zeroDateTimeBehavior=convertToNull&amp;allowMultiQueries=true&useSSL=false
+        username: root
+    jpa:
+        show-sql: true

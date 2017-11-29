@@ -10,25 +10,25 @@ import org.springframework.data.repository.query.Param;
 
 public interface UserRepository extends JpaRepository<User, Integer> {
 
-    public User findByName(String name);
+    User findByName(String name);
 
     @Query("select u from User u where u.name=?1 and u.department.id=?2")
-    public User findUserByDepartment(String name, Integer departmentId);
+    User findUserByDepartment(String name, Integer departmentId);
 
-    @Query(value = "select * from user where name=?1 and department_id=?2", nativeQuery = true)
-    public User nativeQuery(String name, Integer departmentId);
+    @Query(value = "SELECT * FROM user WHERE name=?1 AND department_id=?2", nativeQuery = true)
+    User nativeQuery(String name, Integer departmentId);
 
-    @Query(value = "select * from user where name=:name and department_id=:departmentId", nativeQuery = true)
-    public User nativeQuery2(@Param("name") String name,
+    @Query(value = "SELECT * FROM user WHERE name=:name AND department_id=:departmentId", nativeQuery = true)
+    User nativeQuery2(@Param("name") String name,
         @Param("departmentId") Integer departmentId);
 
-    @Query(value = "select department_id,count(1) total from user group by department_id", nativeQuery = true)
-    public List<Object[]> queryUserCount();
+    @Query(value = "SELECT department_id,count(1) total FROM user GROUP BY department_id", nativeQuery = true)
+    List<Object[]> queryUserCount();
 
-    @Query(value = "select id from user where department_id=?1", nativeQuery = true)
-    public List<Integer> queryUserIds(Integer departmentId);
+    @Query(value = "SELECT id FROM user WHERE department_id=?1", nativeQuery = true)
+    List<Integer> queryUserIds(Integer departmentId);
 
     @Query(value = "select u from User u where u.department.id=?1")
-    public Page<User> queryUsers(Integer departmentId, Pageable page);
+    Page<User> queryUsers(Integer departmentId, Pageable page);
 
 }

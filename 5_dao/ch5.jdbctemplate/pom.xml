@@ -13,7 +13,6 @@
         <version>2.0.0.M6</version>
     </parent>
 
-    <!-- Add typical dependencies for a web application -->
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -25,23 +24,11 @@
             <artifactId>spring-boot-starter-data-jpa</artifactId>
         </dependency>
 
-        <!--<dependency>-->
-            <!--<groupId>com.alibaba</groupId>-->
-            <!--<artifactId>druid-spring-boot-starter</artifactId>-->
-            <!--<version>1.1.5</version>-->
-        <!--</dependency>-->
-
         <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
             <version>5.1.44</version>
         </dependency>
-
-        <!--<dependency>-->
-            <!--<groupId>com.h2database</groupId>-->
-            <!--<artifactId>h2</artifactId>-->
-            <!--<version>1.4.192</version>-->
-        <!--</dependency>-->
 
         <dependency>
             <groupId>org.projectlombok</groupId>

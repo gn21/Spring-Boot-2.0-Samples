@@ -74,5 +74,6 @@
     <orderEntry type="library" name="Maven: org.springframework:spring-orm:5.0.1.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-tx:5.0.1.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-aspects:5.0.1.RELEASE" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.projectlombok:lombok:1.16.18" level="project" />
   </component>
 </module>

@@ -31,23 +31,26 @@ public class UserServiceImpl implements UserService {
     UserRepository userDao;
 
     @Autowired
-    EntityManager em;
+    EntityManager entityManager;
 
+    @Override
     public void updateUser() {
 //		int id = 1;
-//		User user = em.find(User.class, 1);
+//		User user = entityManager.find(User.class, 1);
 //		user.setName("haha");
         User user = new User();
         user.setId(1);
         user.setName("hhaancd");
-        em.merge(user);
+        entityManager.merge(user);
     }
 
+    @Override
     public User findUser(int id) {
         Optional<User> user = userDao.findById(id);
         return user.orElse(null);
     }
 
+    @Override
     public Integer addUser(User user) {
         userDao.save(user);
         user.setName("1" + user.getName());
@@ -55,6 +58,7 @@ public class UserServiceImpl implements UserService {
         return user.getId();
     }
 
+    @Override
     public List<User> getAllUser(int page, int size) {
         PageRequest pageable = PageRequest.of(page, size);
         Page<User> pageObject = userDao.findAll(pageable);
@@ -65,11 +69,13 @@ public class UserServiceImpl implements UserService {
         return pageObject.getContent();
     }
 
+    @Override
     public User getUser(String name) {
 
         return userDao.findByName(name);
     }
 
+    @Override
     public User getUser(String name, Integer departmentId) {
 //		getUser(departmentId);
         return userDao.nativeQuery2(name, departmentId);
@@ -82,10 +88,12 @@ public class UserServiceImpl implements UserService {
         int a = 1;
     }
 
+    @Override
     public Page<User> queryUser(Integer departmentId, Pageable page) {
         return userDao.queryUsers(departmentId, page);
     }
 
+    @Override
     public Page<User> queryUser2(Integer departmentId, Pageable page) {
         //构造JPQL和实际的参数
         StringBuilder baseJpql = new StringBuilder("from User u where 1=1 ");
@@ -103,10 +111,10 @@ public class UserServiceImpl implements UserService {
         List list = getQueryResult(baseJpql, paras, page);
 
         //返回结果
-        Page ret = new PageImpl(list, page, count);
-        return ret;
+        return (Page) new PageImpl(list, page, count);
     }
 
+    @Override
     public List<User> getByExample(String name) {
         User user = new User();
         Department dept = new Department();
@@ -117,21 +125,19 @@ public class UserServiceImpl implements UserService {
             .withMatcher("name", GenericPropertyMatchers.startsWith().ignoreCase());
         Example<User> example = Example.of(user, matcher);
 //		Example<User> example = Example.of(user);
-        List<User> list = userDao.findAll(example);
-        return list;
+        return userDao.findAll(example);
     }
 
     private List getQueryResult(StringBuilder baseJpql, Map<String, Object> paras, Pageable page) {
-        Query query = em.createQuery("select u " + baseJpql.toString());
+        Query query = entityManager.createQuery("select u " + baseJpql.toString());
         setQueryParameter(query, paras);
         query.setFirstResult((int) page.getOffset());
         query.setMaxResults(page.getPageNumber());
-        List list = query.getResultList();
-        return list;
+        return query.getResultList();
     }
 
     private Long getQueryCount(StringBuilder baseJpql, Map<String, Object> paras) {
-        Query query = em.createQuery("select count(1) " + baseJpql.toString());
+        Query query = entityManager.createQuery("select count(1) " + baseJpql.toString());
         setQueryParameter(query, paras);
         Number number = (Number) query.getSingleResult();
         return number.longValue();
