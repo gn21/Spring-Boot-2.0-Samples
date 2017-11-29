@@ -53,11 +53,13 @@
     <orderEntry type="library" name="Maven: org.springframework:spring-aop:5.0.1.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-context:5.0.1.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-expression:5.0.1.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: com.zaxxer:HikariCP:2.7.2" level="project" />
+    <orderEntry type="library" name="Maven: org.slf4j:slf4j-api:1.7.25" level="project" />
+    <orderEntry type="library" name="Maven: mysql:mysql-connector-java:6.0.5" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-starter-data-jpa:2.0.0.M6" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-starter-aop:2.0.0.M6" level="project" />
     <orderEntry type="library" name="Maven: org.aspectj:aspectjweaver:1.8.12" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-starter-jdbc:2.0.0.M6" level="project" />
-    <orderEntry type="library" name="Maven: com.zaxxer:HikariCP:2.7.2" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-jdbc:5.0.1.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.hibernate:hibernate-core:5.2.12.Final" level="project" />
     <orderEntry type="library" name="Maven: org.hibernate.javax.persistence:hibernate-jpa-2.1-api:1.0.0.Final" level="project" />
@@ -71,9 +73,6 @@
     <orderEntry type="library" name="Maven: org.springframework.data:spring-data-commons:2.0.1.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-orm:5.0.1.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-tx:5.0.1.RELEASE" level="project" />
-    <orderEntry type="library" name="Maven: org.slf4j:slf4j-api:1.7.25" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-aspects:5.0.1.RELEASE" level="project" />
-    <orderEntry type="library" name="Maven: mysql:mysql-connector-java:5.1.44" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Maven: org.projectlombok:lombok:1.16.18" level="project" />
   </component>
 </module>

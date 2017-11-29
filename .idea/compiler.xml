@@ -11,6 +11,7 @@
         <module name="ch3.mvc" />
         <module name="ch4.jackson" />
         <module name="ch5.jdbctemplate" />
+        <module name="ch6.jpadata" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -19,6 +20,7 @@
       <module name="ch3.mvc" target="1.8" />
       <module name="ch4.jackson" target="1.5" />
       <module name="ch5.jdbctemplate" target="1.8" />
+      <module name="ch6.jpadata" target="1.8" />
       <module name="Spring-Boot-2.0-Samples" target="1.5" />
     </bytecodeTargetLevel>
   </component>

@@ -19,6 +19,9 @@ import org.springframework.jdbc.support.GeneratedKeyHolder;
 import org.springframework.jdbc.support.KeyHolder;
 import org.springframework.stereotype.Repository;
 
+/**
+ * @author yangyueming
+ */
 @Repository
 public class UserDao {
 
@@ -84,6 +87,7 @@ public class UserDao {
         final String sql = "insert into user (name, departmet_id ) values (?,?)";
         KeyHolder keyHolder = new GeneratedKeyHolder();
         jdbcTemplate.update(new PreparedStatementCreator() {
+            @Override
             public PreparedStatement createPreparedStatement(Connection connection)
                 throws SQLException {
                 PreparedStatement ps = connection.prepareStatement(sql, new String[]{"id"});

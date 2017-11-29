@@ -6,6 +6,7 @@
     <file url="file://$PROJECT_DIR$/2_env/ch2.aop" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/3_mvc/ch3.mvc" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/5_dao/ch5.jdbctemplate" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/6_springdata/ch6.jpadata" charset="UTF-8" />
     <file url="PROJECT" charset="UTF-8" />
   </component>
 </project>

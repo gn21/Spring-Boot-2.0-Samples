@@ -2,6 +2,7 @@ package com.bee.sample.ch5.entity;
 
 import java.io.Serializable;
 import java.util.Date;
+import javax.persistence.Entity;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 

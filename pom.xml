@@ -20,6 +20,7 @@
         <module>3_mvc/ch3.mvc</module>
         <module>4_views/ch4.jackson</module>
         <module>5_dao/ch5.jdbctemplate</module>
+        <module>6_springdata/ch6.jpadata</module>
     </modules>
 
     <!-- Add Spring repositories -->
