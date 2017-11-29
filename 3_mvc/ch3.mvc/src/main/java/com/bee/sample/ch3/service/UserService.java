@@ -1,11 +1,16 @@
 package com.bee.sample.ch3.service;
 
+import com.bee.sample.ch3.entity.User;
 import java.util.List;
 
-import com.bee.sample.ch3.entity.User;
-
+/**
+ * @author yangyueming
+ */
 public interface UserService {
-	public List<User> allUser();
-	public User getUserById(Long id);
-	public void updateUser(Long id,Integer type);
+
+    List<User> allUser();
+
+    User getUserById(Long id);
+
+    void updateUser(Long id, Integer type);
 }

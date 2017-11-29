@@ -6,8 +6,10 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 @Controller
 public class HelloworldController {
-	@RequestMapping("/sayhello.html")
-	public @ResponseBody String say(){
-		return "hello world";
-	}
+
+    @RequestMapping("/sayhello.html")
+    public @ResponseBody
+    String say() {
+        return "hello world";
+    }
 }

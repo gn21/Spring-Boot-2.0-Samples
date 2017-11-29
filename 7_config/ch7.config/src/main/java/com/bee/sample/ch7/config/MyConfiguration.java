@@ -5,8 +5,9 @@ import org.springframework.context.annotation.Configuration;
 
 @Configuration
 public class MyConfiguration {
-	@Bean
-	public URLTestBean getURLTestBean(){
-		return new URLTestBean();
-	}
+
+    @Bean
+    public URLTestBean getURLTestBean() {
+        return new URLTestBean();
+    }
 }

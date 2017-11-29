@@ -5,7 +5,8 @@
 </html>
 <script>
     'use strict';
-    function run () {
+
+    function run() {
         var oauth2 = window.opener.swaggerUIRedirectOauth2;
         var sentState = oauth2.state;
         var isValid, qp;
@@ -13,9 +14,9 @@
         qp = (window.location.hash || location.search).substring(1);
 
         qp = qp ? JSON.parse('{"' + qp.replace(/&/g, '","').replace(/=/g, '":"') + '"}',
-                function (key, value) {
-                    return key === "" ? value : decodeURIComponent(value)
-                }
+            function (key, value) {
+                return key === "" ? value : decodeURIComponent(value)
+            }
         ) : {}
 
         isValid = qp.state === sentState
@@ -63,14 +64,13 @@
             "client_id": auth.clientId
         }
 
-        for ( name in fields ) {
+        for (name in fields) {
             input = document.createElement("input");
             input.name = name;
             input.value = fields[name];
             input.type = "hidden";
             form.appendChild(input);
         }
-
 
         form.method = "POST";
         form.action = action;

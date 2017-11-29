@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding" native2AsciiForPropertiesFiles="true" defaultCharsetForPropertiesFiles="UTF-8">
+    <file url="file://$PROJECT_DIR$" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/1_preface/ch1.helloword" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/2_env/ch2.aop" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/3_mvc/ch3.mvc" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/5_dao/ch5.jdbctemplate" charset="UTF-8" />
     <file url="PROJECT" charset="UTF-8" />
   </component>
 </project>
