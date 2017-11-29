@@ -3,12 +3,12 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/Spring-Boot-2.0-Samples.iml" filepath="$PROJECT_DIR$/.idea/Spring-Boot-2.0-Samples.iml" />
-      <module fileurl="file://$PROJECT_DIR$/1_preface/ch1.helloword/ch1.helloworld.iml" filepath="$PROJECT_DIR$/1_preface/ch1.helloword/ch1.helloworld.iml" />
-      <module fileurl="file://$PROJECT_DIR$/2_env/ch2.aop/ch2.aop.iml" filepath="$PROJECT_DIR$/2_env/ch2.aop/ch2.aop.iml" />
-      <module fileurl="file://$PROJECT_DIR$/3_mvc/ch3.mvc/ch3.mvc.iml" filepath="$PROJECT_DIR$/3_mvc/ch3.mvc/ch3.mvc.iml" />
-      <module fileurl="file://$PROJECT_DIR$/4_views/ch4.jackson/ch4.jackson.iml" filepath="$PROJECT_DIR$/4_views/ch4.jackson/ch4.jackson.iml" />
-      <module fileurl="file://$PROJECT_DIR$/5_dao/ch5.jdbctemplate/ch5.jdbctemplate.iml" filepath="$PROJECT_DIR$/5_dao/ch5.jdbctemplate/ch5.jdbctemplate.iml" />
-      <module fileurl="file://$PROJECT_DIR$/6_springdata/ch6.jpadata/ch6.jpadata.iml" filepath="$PROJECT_DIR$/6_springdata/ch6.jpadata/ch6.jpadata.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ch1.helloword/ch1.helloworld.iml" filepath="$PROJECT_DIR$/ch1.helloword/ch1.helloworld.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ch2.aop/ch2.aop.iml" filepath="$PROJECT_DIR$/ch2.aop/ch2.aop.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ch3.mvc/ch3.mvc.iml" filepath="$PROJECT_DIR$/ch3.mvc/ch3.mvc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ch4.jackson/ch4.jackson.iml" filepath="$PROJECT_DIR$/ch4.jackson/ch4.jackson.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ch5.jdbctemplate/ch5.jdbctemplate.iml" filepath="$PROJECT_DIR$/ch5.jdbctemplate/ch5.jdbctemplate.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ch6.jpadata/ch6.jpadata.iml" filepath="$PROJECT_DIR$/ch6.jpadata/ch6.jpadata.iml" />
     </modules>
   </component>
 </project>
