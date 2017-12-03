@@ -2,6 +2,7 @@
     xmlns="http://maven.apache.org/POM/4.0.0"
     xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
+
     <groupId>com.bee.sample</groupId>
     <artifactId>ch10.rest</artifactId>
     <version>0.0.1-SNAPSHOT</version>
@@ -11,17 +12,20 @@
         <artifactId>spring-boot-starter-parent</artifactId>
         <version>2.0.0.M4</version>
     </parent>
+
     <!-- Add typical dependencies for a web application -->
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
+
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-devtools</artifactId>
             <optional>true</optional>
         </dependency>
+
         <dependency>
             <groupId>com.squareup.okhttp3</groupId>
             <artifactId>okhttp</artifactId>
@@ -32,6 +36,11 @@
             <groupId>com.ibeetl</groupId>
             <artifactId>beetl-framework-starter</artifactId>
             <version>1.1.15.RELEASE</version>
+        </dependency>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.16.18</version>
         </dependency>
 
     </dependencies>
@@ -71,4 +80,5 @@
             <url>http://repo.spring.io/milestone</url>
         </pluginRepository>
     </pluginRepositories>
+
 </project>

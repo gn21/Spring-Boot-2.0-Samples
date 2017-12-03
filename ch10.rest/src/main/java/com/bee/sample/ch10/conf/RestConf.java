@@ -5,6 +5,9 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.http.client.OkHttp3ClientHttpRequestFactory;
 import org.springframework.web.client.RestTemplate;
 
+/**
+ * @author yangyueming
+ */
 @Configuration
 public class RestConf implements RestTemplateCustomizer {
 

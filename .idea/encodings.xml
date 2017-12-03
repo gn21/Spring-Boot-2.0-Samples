@@ -3,10 +3,14 @@
   <component name="Encoding" native2AsciiForPropertiesFiles="true" defaultCharsetForPropertiesFiles="UTF-8">
     <file url="file://$PROJECT_DIR$" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ch1.helloword" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ch10.rest" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ch2.aop" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ch3.mvc" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ch5.jdbctemplate" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ch6.jpadata" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ch7.config" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ch8.deploy" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ch9.test" charset="UTF-8" />
     <file url="PROJECT" charset="UTF-8" />
   </component>
 </project>

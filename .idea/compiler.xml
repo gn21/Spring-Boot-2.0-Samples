@@ -7,20 +7,28 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="ch1.helloworld" />
+        <module name="ch10.rest" />
         <module name="ch2.aop" />
         <module name="ch3.mvc" />
         <module name="ch4.jackson" />
         <module name="ch5.jdbctemplate" />
         <module name="ch6.jpadata" />
+        <module name="ch7.config" />
+        <module name="ch8.deploy" />
+        <module name="ch9.test" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="ch1.helloworld" target="1.8" />
+      <module name="ch10.rest" target="1.8" />
       <module name="ch2.aop" target="1.8" />
       <module name="ch3.mvc" target="1.8" />
       <module name="ch4.jackson" target="1.5" />
       <module name="ch5.jdbctemplate" target="1.8" />
       <module name="ch6.jpadata" target="1.8" />
+      <module name="ch7.config" target="1.8" />
+      <module name="ch8.deploy" target="1.8" />
+      <module name="ch9.test" target="1.8" />
       <module name="Spring-Boot-2.0-Samples" target="1.5" />
     </bytecodeTargetLevel>
   </component>

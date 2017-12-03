@@ -21,6 +21,10 @@
         <module>ch4.jackson</module>
         <module>ch5.jdbctemplate</module>
         <module>ch6.jpadata</module>
+        <module>ch7.config</module>
+        <module>ch8.deploy</module>
+        <module>ch9.test</module>
+        <module>ch10.rest</module>
     </modules>
 
     <!-- Add Spring repositories -->
